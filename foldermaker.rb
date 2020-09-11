@@ -1,9 +1,9 @@
-create_files(10)
+
 def create_files(num)
-counter = 0
-counter2 = 0
-counter3 = 0
-counter4 = 0
+  counter = 0
+  counter2 = 0
+  counter3 = 0
+  counter4 = 0
 while counter != num
   print `mkdir ~/desktop/#{counter}`
   while counter2 != num
@@ -24,3 +24,5 @@ while counter != num
   counter += 1
 end
 end
+
+create_files(10)

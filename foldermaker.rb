@@ -25,4 +25,4 @@ while counter != num
 end
 end
 
-create_files(10)
+create_files(100)

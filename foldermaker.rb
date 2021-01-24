@@ -1,17 +1,20 @@
 
+
 def create_files(num)
-  counter = 0
-  counter2 = 0
-  counter3 = 0
-  counter4 = 0
+counter = 0
+counter2 = 0
+counter3 = 0
+counter4 = 0
+system("mkdir ~/desktop/folder_maze")
 while counter != num
-  print `mkdir ~/desktop/#{counter}`
+  system("mkdir ~/desktop/folder_maze/#{counter}")
   while counter2 != num
-    print `mkdir ~/desktop/#{counter}/#{counter2}`
+    system("mkdir ~/desktop/folder_maze/#{counter}/#{counter2}")
+
     while counter3 != num
-      print `mkdir ~/desktop/#{counter}/#{counter2}/#{counter3}`
+      system("mkdir ~/desktop/folder_maze/#{counter}/#{counter2}/#{counter3}")
       while counter4 != num
-        print `mkdir ~/desktop/#{counter}/#{counter2}/#{counter3}/#{counter4}`
+        system("mkdir ~/desktop/folder_maze/#{counter}/#{counter2}/#{counter3}/#{counter4}")
         counter4 += 1
       end
       counter4 = 0
@@ -24,5 +27,6 @@ while counter != num
   counter += 1
 end
 end
+
 
 create_files(100)

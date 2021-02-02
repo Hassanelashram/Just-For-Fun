@@ -40,4 +40,4 @@ class FolderMaze
    end
 end
 
-FolderMaze.new(20).create_files
+FolderMaze.new(100).create_files

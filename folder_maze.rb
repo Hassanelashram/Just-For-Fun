@@ -1,8 +1,7 @@
 class FolderMaze
-  attr_reader :num
 
-  def initialize(num)
-    @num = num
+  def num
+    ARGV.first.to_i
   end
 
   def rand_path
@@ -40,4 +39,4 @@ class FolderMaze
    end
 end
 
-FolderMaze.new(100).create_files
+FolderMaze.new.create_files

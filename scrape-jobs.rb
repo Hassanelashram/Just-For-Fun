@@ -20,3 +20,4 @@ end
 # find relevent ruby jobs
 # make search query dynamic
 # try to get more data from job descriptions
+# automate it with cron job

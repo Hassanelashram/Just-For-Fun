@@ -1,3 +1,5 @@
+require './block.rb'
+require 'byebug'
 class BlockChain
     attr_accessor :chain
 

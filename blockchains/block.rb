@@ -1,6 +1,8 @@
 require 'digest'
 
 class Block
+    attr_accessor :previous_hash, :hash
+    attr_reader :data, :timestamp
     def initialize(data, previous_hash = "", hash = "")
         @data = data
         @previous_hash = previous_hash
